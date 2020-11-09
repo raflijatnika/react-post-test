@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
+import Helmet from 'react-helmet'
+
 import { getPost } from '../services'
 
 // Layout and Component
@@ -18,6 +20,9 @@ function CreatePost() {
 
   return (
     <LayoutDashboard navTitle="Post List">
+      <Helmet>
+        <title>Post List | Project Post Test</title>
+      </Helmet>
       <div className="row">
         <div className="col-lg-2">
           <Link className="btn btn-success mt-3 ml-3" to="/post-create">

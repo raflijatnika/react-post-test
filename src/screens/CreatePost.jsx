@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Helmet from 'react-helmet'
+
 import { Link } from 'react-router-dom'
 
 // Layout and Component
@@ -12,6 +14,10 @@ import CreatePostForm from '../components/form/CreatePostForm'
 function CreatePost() {
   return (
     <LayoutDashboard navTitle="Create Post">
+      <Helmet>
+        <title>Create Post | Project Post Test</title>
+      </Helmet>
+
       <nav className="m-3">
         <ol className="breadcrumb">
           <li className="breadcrumb-item">

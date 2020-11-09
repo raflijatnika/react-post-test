@@ -3,6 +3,8 @@
 import React, { useEffect, useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 
+import Helmet from 'react-helmet'
+
 // layout
 import LayoutDashboard from '../layouts/LayoutDashboard'
 import Card from '../components/Card'
@@ -25,6 +27,10 @@ function PostDetail() {
 
   return (
     <LayoutDashboard navTitle="Post Detail">
+      <Helmet>
+        <title>Post Detail | Project Post Test</title>
+      </Helmet>
+
       <nav className="m-3">
         <ol className="breadcrumb">
           <li className="breadcrumb-item">
